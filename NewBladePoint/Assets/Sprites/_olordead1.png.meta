@@ -133,7 +133,7 @@ TextureImporter:
         width: 809
         height: 798
       alignment: 9
-      pivot: {x: 0.9602286, y: 0.22880769}
+      pivot: {x: 0.93501335, y: 0.32253915}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,7 +196,7 @@ TextureImporter:
         width: 1237
         height: 598
       alignment: 9
-      pivot: {x: 1.2353235, y: 0.23882909}
+      pivot: {x: 1.2802936, y: 0.30819285}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,11 +213,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5915
-        y: 36
+        y: 40
         width: 1314
         height: 585
       alignment: 9
-      pivot: {x: 1.212991, y: 0.18859683}
+      pivot: {x: 1.2019166, y: 0.29301777}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: _olordead1_5
       rect:
         serializedVersion: 2
-        x: 7330
-        y: 11
+        x: 7324
+        y: 5
         width: 1176
         height: 627
       alignment: 9
-      pivot: {x: 1.2407717, y: 0.23330127}
+      pivot: {x: 1.3725362, y: 0.33838737}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,7 +259,7 @@ TextureImporter:
         width: 1139
         height: 649
       alignment: 9
-      pivot: {x: 1.2335159, y: 0.21561894}
+      pivot: {x: 1.3899897, y: 0.33545208}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,7 +280,7 @@ TextureImporter:
         width: 1133
         height: 648
       alignment: 9
-      pivot: {x: 1.1810691, y: 0.19424798}
+      pivot: {x: 1.3953656, y: 0.33123407}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
