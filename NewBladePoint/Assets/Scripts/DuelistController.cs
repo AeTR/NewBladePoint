@@ -6,6 +6,8 @@ public class DuelistController : MonoBehaviour
 {
     public SpriteRenderer mySpriteRenderer;
     public Animator myAnimator;
+    public Animator fireAnim;
+  
     public Animator leftAnim, rightAnim; //if necessary
     public bool left;
 
@@ -35,7 +37,13 @@ public class DuelistController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             myAnimator.SetTrigger("Fire");
+            fireAnim.SetTrigger("flameOn");
         }
+      
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                myAnimator.SetTrigger("Kick");
+            }
 
         if (left && Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -65,5 +73,9 @@ public class DuelistController : MonoBehaviour
     public void Block()
     {
         myAnimator.SetTrigger("Block");
+    }
+    public void Kick()
+    {
+        myAnimator.SetTrigger("Kick");
     }
 }
