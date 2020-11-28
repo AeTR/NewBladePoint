@@ -21,12 +21,14 @@ public class DuelistController : MonoBehaviour
 
         if (left && Input.GetKey(KeyCode.RightArrow))
         {
-            
+            left = false;
+            //animation plays and location/orientation changes
         }
 
         if (!left && Input.GetKey(KeyCode.LeftArrow))
         {
-            
+            left = true;
+            //animation plays and location/orientation changes
         }
     }
 }
