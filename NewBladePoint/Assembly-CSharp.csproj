@@ -54,8 +54,8 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\DuelistController.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\CloudMove.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/sfarn/Documents/NewBladePoint/NewBladePoint/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
