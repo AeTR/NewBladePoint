@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: c76d18f01a75b47d8a4074c574f0944a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 10229426340836292
+    second: _olorKick_0
+  - first:
+      213: 7523367702099982940
+    second: _olorKick_1
+  - first:
+      213: -9178347052344285394
+    second: _olorKick_2
+  - first:
+      213: 944133876832775756
+    second: _olorKick_3
+  - first:
+      213: 5752052122137020095
+    second: _olorKick_4
+  - first:
+      213: -231426754898234268
+    second: _olorKick_5
+  - first:
+      213: -3547327478937525039
+    second: _olorKick_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _olorKick_0
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 203
+        width: 473
+        height: 341
+      alignment: 9
+      pivot: {x: 0.56196994, y: 0.43721032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c33d4beb97542000800000000000000
+      internalID: 10229426340836292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _olorKick_1
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 208
+        width: 433
+        height: 341
+      alignment: 9
+      pivot: {x: 0.5797187, y: 0.40439683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5af056801f586860800000000000000
+      internalID: 7523367702099982940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _olorKick_2
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 215
+        width: 426
+        height: 430
+      alignment: 9
+      pivot: {x: 0.59003174, y: 0.31269127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27e3cf1cf5ff9080800000000000000
+      internalID: -9178347052344285394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _olorKick_3
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 118
+        width: 677
+        height: 677
+      alignment: 9
+      pivot: {x: 0.32437778, y: 0.34137332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ea70d32cc3a1d00800000000000000
+      internalID: 944133876832775756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _olorKick_4
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 121
+        width: 648
+        height: 730
+      alignment: 9
+      pivot: {x: 0.31825426, y: 0.32374266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6428dede463df40800000000000000
+      internalID: 5752052122137020095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _olorKick_5
+      rect:
+        serializedVersion: 2
+        x: 3702
+        y: 120
+        width: 374
+        height: 726
+      alignment: 9
+      pivot: {x: 0.63914776, y: 0.37723443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464f4c2b79ec9ccf0800000000000000
+      internalID: -231426754898234268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _olorKick_6
+      rect:
+        serializedVersion: 2
+        x: 4285
+        y: 177
+        width: 566
+        height: 189
+      alignment: 9
+      pivot: {x: 0.5162677, y: 0.43910468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d462f3d37c55cec0800000000000000
+      internalID: -3547327478937525039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
