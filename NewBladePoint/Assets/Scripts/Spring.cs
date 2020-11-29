@@ -16,7 +16,9 @@ public class Spring : Enemy
     }
 
     // Update is called once per frame
-    void Update()
+   
+    
+    void FixedUpdate()
     {
         if (!prepping)
         {
@@ -58,7 +60,7 @@ public class Spring : Enemy
             movingUp = true;
         }
 
-        if (transform.position.y >= 3f)
+        if (transform.position.y >= 1f)
         {
             movingUp = false;
         }

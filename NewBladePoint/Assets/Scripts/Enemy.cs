@@ -5,30 +5,41 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public bool movingLeft, stunned, prepping;
+    public bool movingLeft, stunned;
 
     public float moveSpeed;
 
     public Animator myAnimator;
 
-    public SpriteRenderer mySpriteRenderer;
+    public ParticleSystem burst;
 
-    public Player myPlayer;
+    public float deathTime = .3f;
+
+    public bool die = false;
 
     // Start is called before the first frame update
     void Start()
     {
         myAnimator = GetComponent<Animator>();
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void FixedUpdate()
     {
-        if (!stunned && !prepping)
+        if (!stunned)
         {
             Move();
         }
+      /*  if (die == true)
+        {
+            Debug.Log("tick tock");
+            deathTime -= Time.deltaTime;
+        }
+        if (deathTime <= 0)
+        {
+           
+        }*/
+
     }
 
     public void Move()
@@ -40,17 +51,24 @@ public class Enemy : MonoBehaviour
         if (movingLeft)
         {
             transform.Translate(-moveSpeed, 0f, 0f);
+            //transform.TransformDirection(Vector3.left);
+            position.x = position.x - moveSpeed;
         }
         else
         {
-            transform.Translate(moveSpeed, 0f, 0f);
+            position.x = position.x + moveSpeed;
         }
+       
     }
 
     public void Die()
     {
+        burst.Play();
+
+        die = true;
+
         Destroy(gameObject);
-        myPlayer.KillConfirm();
+
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -65,21 +83,5 @@ public class Enemy : MonoBehaviour
     public void Stun()
     {
         
-    }
-
-    public void Prepare(bool amIFacingLeft)
-    {
-        if (amIFacingLeft)
-        {
-            movingLeft = true;
-        }
-        else
-        {
-            movingLeft = false;
-            mySpriteRenderer.flipX = true;
-        }
-
-        myPlayer = GameObject.Find("Player Object").GetComponent<Player>();
-        prepping = false;
     }
 }
