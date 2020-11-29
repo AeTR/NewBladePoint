@@ -46,6 +46,11 @@ public class Player : MonoBehaviour
             //Finn did the press/hold thing in an interesting way, I haven't put it in yet.
             currentDuelist.Stab();
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            currentDuelist.Kick();
+        }
         
         
     }
