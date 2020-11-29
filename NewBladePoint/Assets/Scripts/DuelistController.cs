@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class DuelistController : MonoBehaviour
     public Animator fireAnim;
   
     public Animator leftAnim, rightAnim; //if necessary
+    public GameManager myGM;
     public bool left;
 
     public enum DuelistState
@@ -28,6 +30,7 @@ public class DuelistController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             myAnimator.SetTrigger("Stab");
@@ -41,9 +44,10 @@ public class DuelistController : MonoBehaviour
         }
       
         if (Input.GetKeyDown(KeyCode.LeftShift))
-            {
+        {
                 myAnimator.SetTrigger("Kick");
-            }
+        }
+        */
 
         if (left && Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -81,5 +85,14 @@ public class DuelistController : MonoBehaviour
     {
         tag = "attackKick";
         myAnimator.SetTrigger("Kick");
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag.Contains("enemy") && !other.GetComponent<Enemy>().stunned)
+        {
+            //play death animation
+            myGM.RestartCurrentLevel();
+        }
     }
 }

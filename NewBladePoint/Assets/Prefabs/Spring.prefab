@@ -117,10 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207b9f926959c45cb91e85adab44bdb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingLeft: 0
+  movingLeft: 1
   stunned: 0
+  prepping: 0
   moveSpeed: 0.01
   myAnimator: {fileID: 8071252311092260237}
+  mySpriteRenderer: {fileID: 8071252311092260226}
   movingUp: 0
   upDownSpeed: 0.04
 --- !u!70 &630502482306552025

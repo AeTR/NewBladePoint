@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\SpringBehavior.cs" />
+     <Compile Include="Assets\Scripts\Cannon.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/ATR/NewBladePoint/NewBladePoint/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

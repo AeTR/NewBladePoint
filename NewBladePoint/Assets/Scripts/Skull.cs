@@ -7,13 +7,14 @@ public class Skull : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        
+        myAnimator = GetComponent<Animator>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!stunned)
+        if (!stunned && !prepping)
         {
             Move();
         }

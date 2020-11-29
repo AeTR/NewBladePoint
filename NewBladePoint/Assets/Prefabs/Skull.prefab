@@ -117,10 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764912633c6994d15b410a7ce9cd9892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingLeft: 0
+  movingLeft: 1
   stunned: 0
-  moveSpeed: 0.07
+  prepping: 0
+  moveSpeed: 0.03
   myAnimator: {fileID: 2781346949170609246}
+  mySpriteRenderer: {fileID: 2781346949170609245}
 --- !u!50 &1590101135656181421
 Rigidbody2D:
   serializedVersion: 4

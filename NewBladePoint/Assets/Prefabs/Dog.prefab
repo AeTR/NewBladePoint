@@ -119,8 +119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingLeft: 1
   stunned: 0
-  moveSpeed: 0.01
+  prepping: 0
+  moveSpeed: 0.05
   myAnimator: {fileID: 8057041772561556011}
+  mySpriteRenderer: {fileID: 8057041772561556008}
 --- !u!61 &3964130577948299671
 BoxCollider2D:
   m_ObjectHideFlags: 0

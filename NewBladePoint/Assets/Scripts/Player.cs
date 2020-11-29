@@ -5,11 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public DuelistController leftDuelist, rightDuelist, currentDuelist;
+    public GameManager myGM;
+    public int enemyGoal, currentKillNum;
     // Start is called before the first frame update
     void Start()
     {
         currentDuelist = rightDuelist;
         leftDuelist.gameObject.SetActive(false);
+        currentKillNum = 0;
     }
 
     // Update is called once per frame
@@ -51,7 +54,14 @@ public class Player : MonoBehaviour
         {
             currentDuelist.Kick();
         }
-        
-        
+    }
+
+    public void KillConfirm()
+    {
+        currentKillNum++;
+        if (currentKillNum >= enemyGoal)
+        {
+            myGM.Progress();
+        }
     }
 }

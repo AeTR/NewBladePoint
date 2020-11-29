@@ -11,12 +11,17 @@ public class Spring : Enemy
     void Start()
     {
         movingUp = false;
+        myAnimator = GetComponent<Animator>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (!prepping)
+        {
+            Move();
+        }
     }
 
     new public void Move()

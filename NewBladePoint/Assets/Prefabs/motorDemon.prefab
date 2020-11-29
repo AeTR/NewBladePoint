@@ -117,10 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617f9a430b245458782505b5aa83779b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingLeft: 0
+  movingLeft: 1
   stunned: 0
-  moveSpeed: 0
+  prepping: 0
+  moveSpeed: 0.025
   myAnimator: {fileID: 3790449128930614237}
+  mySpriteRenderer: {fileID: 3790449128930614238}
 --- !u!70 &446041707331725863
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
