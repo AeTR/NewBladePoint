@@ -11,15 +11,7 @@ public class Demon : Enemy
         myAnimator = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (!stunned && !prepping)
-        {
-            Move();
-        }
-    }
+    
 
     new public void OnTriggerEnter2D(Collider2D other)
     {

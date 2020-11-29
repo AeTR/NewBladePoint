@@ -37,6 +37,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             currentDuelist.FireBreath();
+            currentDuelist.fireAnim.SetTrigger("flameOn");
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))

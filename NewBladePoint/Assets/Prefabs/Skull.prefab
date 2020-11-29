@@ -119,10 +119,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movingLeft: 1
   stunned: 0
-  prepping: 0
   moveSpeed: 0.03
   myAnimator: {fileID: 2781346949170609246}
+  burst: {fileID: 0}
+  deathTime: 0.3
+  die: 0
+  prepping: 0
   mySpriteRenderer: {fileID: 2781346949170609245}
+  particles: {fileID: 5460379686698445103, guid: 2fa465fb5aa694106a05d705d192c4c0, type: 3}
 --- !u!50 &1590101135656181421
 Rigidbody2D:
   serializedVersion: 4

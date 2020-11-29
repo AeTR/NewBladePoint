@@ -15,17 +15,6 @@ public class Spring : Enemy
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-   
-    
-    void FixedUpdate()
-    {
-        if (!prepping)
-        {
-            Move();
-        }
-    }
-
     new public void Move()
     {
 

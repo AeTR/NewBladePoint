@@ -27,41 +27,6 @@ public class DuelistController : MonoBehaviour
         left = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            myAnimator.SetTrigger("Stab");
-            //set the thing
-        }
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            myAnimator.SetTrigger("Fire");
-            fireAnim.SetTrigger("flameOn");
-        }
-      
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-                myAnimator.SetTrigger("Kick");
-        }
-        */
-
-        if (left && Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            left = false;
-            //animation plays and location/orientation changes
-        }
-
-        if (!left && Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            left = true;
-            //animation plays and location/orientation changes
-        }
-    }
-    
     //currently, all of these simply play their animations
 
     public void Stab()

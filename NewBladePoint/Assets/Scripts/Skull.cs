@@ -11,15 +11,6 @@ public class Skull : Enemy
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (!stunned && !prepping)
-        {
-            Move();
-        }
-    }
-    
     new public void OnTriggerEnter2D(Collider2D other)
     {
         print("haha lol");

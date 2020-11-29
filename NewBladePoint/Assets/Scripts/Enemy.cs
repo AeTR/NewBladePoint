@@ -21,6 +21,8 @@ public class Enemy : MonoBehaviour
 
     public SpriteRenderer mySpriteRenderer;
 
+    public GameObject particles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,20 +33,10 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void FixedUpdate()
     {
-        if (!stunned)
+        if (!stunned && !prepping)
         {
             Move();
         }
-      /*  if (die == true)
-        {
-            Debug.Log("tick tock");
-            deathTime -= Time.deltaTime;
-        }
-        if (deathTime <= 0)
-        {
-           
-        }*/
-
     }
 
     public void Move()
@@ -68,11 +60,13 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        burst.Play();
+        //burst.Play();
 
-        die = true;
-
-        Destroy(gameObject);
+        //die = true;
+        mySpriteRenderer.enabled = false;
+        stunned = true;
+        Instantiate(particles, transform.position, Quaternion.identity);
+        Destroy(gameObject, particles.GetComponent<ParticleSystem>().main.duration);
 
     }
 
