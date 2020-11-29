@@ -17,10 +17,15 @@ public class Enemy : MonoBehaviour
 
     public bool die = false;
 
+    public bool prepping;
+
+    public SpriteRenderer mySpriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         myAnimator = GetComponent<Animator>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -83,5 +88,19 @@ public class Enemy : MonoBehaviour
     public void Stun()
     {
         
+    }
+
+    public void Prepare(bool facingLeft)
+    {
+        if (facingLeft)
+        {
+            movingLeft = true;
+        }
+        else
+        {
+            movingLeft = false;
+            mySpriteRenderer.flipX = true;
+        }
+        prepping = false;
     }
 }
