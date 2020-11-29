@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &774477689253278777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2437797180949373411}
+  - component: {fileID: 5610179514747416821}
+  m_Layer: 0
+  m_Name: Hurtbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2437797180949373411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774477689253278777}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.12223704, y: 1.4729619, z: -8.591786}
+  m_LocalScale: {x: 2.1406534, y: 2.1406534, z: 2.1406534}
+  m_Children: []
+  m_Father: {fileID: 7686020705364327862}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &5610179514747416821
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774477689253278777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.038399816, y: -0.34567714}
+  m_Size: {x: 0.88399816, y: 1.1536345}
+  m_Direction: 0
 --- !u!1 &6181026637882859491
 GameObject:
   m_ObjectHideFlags: 0
@@ -17,7 +64,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1842993577939859367
 Transform:
   m_ObjectHideFlags: 0
@@ -114,6 +161,7 @@ GameObject:
   - component: {fileID: 7686020705364327863}
   - component: {fileID: 7686020705364327860}
   - component: {fileID: -6824245185138616531}
+  - component: {fileID: 2070329182}
   m_Layer: 0
   m_Name: Duelist
   m_TagString: Untagged
@@ -128,11 +176,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7686020705364327861}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.47, y: -3.04, z: 0}
-  m_LocalScale: {x: 0.53354794, y: 0.53354794, z: 0.53354794}
+  m_LocalScale: {x: 0.4671471, y: 0.4671471, z: 0.4671471}
   m_Children:
   - {fileID: 1842993577939859367}
+  - {fileID: 2437797180949373411}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -197,7 +246,7 @@ Animator:
   m_GameObject: {fileID: 7686020705364327861}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a9c86cd388334cfca1b708a073f725b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 40bccc6151ce147abae74d2abb012201, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -218,9 +267,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07ec2951cc495d48bd92dbd2fdc69fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySpriteRenderer: {fileID: 0}
-  myAnimator: {fileID: 0}
+  mySpriteRenderer: {fileID: 7686020705364327863}
+  myAnimator: {fileID: 7686020705364327860}
+  fireAnim: {fileID: 0}
   leftAnim: {fileID: 0}
   rightAnim: {fileID: 0}
   left: 0
   myState: 0
+--- !u!70 &2070329182
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7686020705364327861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.29875684, y: -11.520818}
+  m_Size: {x: 1.6677189, y: 1.6677189}
+  m_Direction: 1
