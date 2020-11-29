@@ -1,19 +1,29 @@
 ﻿<Properties StartupConfiguration="{1E099C5A-6599-9812-C578-B23502128EE7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DuelistController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Desktop/Major Studio/Inhuman/Assets/Pigeon Assets/Game.cs">
     <Files>
       <File FileName="Assets/Scripts/DuelistController.cs" Line="41" Column="10" />
+      <File FileName="Assets/Scripts/SpringBehavior.cs" />
+      <File FileName="Assets/Scripts/Spring.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="52" Column="36" />
+      <File FileName="../../Desktop/Major Studio/Inhuman/Assets/Pigeon Assets/Game.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="NewBladePoint" expanded="True" selected="True" />
+          <Node name="NewBladePoint" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Enemy.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3a4fa348-dda6-4bf6-88a4-44443838d0a5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a1eebe2e-5daa-47e2-806d-4a64f3f1add1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
