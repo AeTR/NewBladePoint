@@ -3,7 +3,9 @@ guid: e5ec26668d01c404b8abcbac681edebb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - myAnimator: {instanceID: 0}
+  - burst: {fileID: 5460379686698445097, guid: 2fa465fb5aa694106a05d705d192c4c0, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -62,20 +62,24 @@ public class DuelistController : MonoBehaviour
 
     public void Stab()
     {
+        tag = "attackStab";
         myAnimator.SetTrigger("Stab");
     }
 
     public void FireBreath()
     {
+        tag = "attackFire";
         myAnimator.SetTrigger("Fire");
     }
 
     public void Block()
     {
+        tag = "attackParry";
         myAnimator.SetTrigger("Block");
     }
     public void Kick()
     {
+        tag = "attackKick";
         myAnimator.SetTrigger("Kick");
     }
 }
