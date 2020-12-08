@@ -63,6 +63,10 @@
      <Compile Include="Assets\Scripts\SpringBehavior.cs" />
      <Compile Include="Assets\Scripts\Cannon.cs" />
      <Compile Include="Assets\Scripts\AutoDestroyParticles.cs" />
+     <Compile Include="Assets\Scripts\StartScreen.cs" />
+     <Compile Include="Assets\Scripts\DeathBox.cs" />
+     <Compile Include="Assets\Scripts\ResetScript.cs" />
+     <Compile Include="Assets\Scripts\Explosion.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/ATR/NewBladePoint/NewBladePoint/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2437797180949373411}
   - component: {fileID: 5610179514747416821}
+  - component: {fileID: 3039008712814714719}
   m_Layer: 0
   m_Name: Hurtbox
   m_TagString: Untagged
@@ -47,6 +48,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.038399816, y: -0.34567714}
   m_Size: {x: 0.88399816, y: 1.1536345}
   m_Direction: 0
+--- !u!114 &3039008712814714719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774477689253278777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6f8641755e141fb97ea0dcdcc39490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myDuelist: {fileID: -6824245185138616531}
 --- !u!1 &6181026637882859491
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,11 +281,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07ec2951cc495d48bd92dbd2fdc69fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stabSound: {fileID: 0}
+  kickSound: {fileID: 0}
+  breathSound: {fileID: 0}
+  blockSound: {fileID: 0}
+  deathSound: {fileID: 0}
   mySpriteRenderer: {fileID: 7686020705364327863}
   myAnimator: {fileID: 7686020705364327860}
   fireAnim: {fileID: 0}
   leftAnim: {fileID: 0}
   rightAnim: {fileID: 0}
+  myGM: {fileID: 0}
   left: 0
   myState: 0
 --- !u!70 &2070329182

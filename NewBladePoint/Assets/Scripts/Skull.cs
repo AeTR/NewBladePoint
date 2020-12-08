@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class Skull : Enemy
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        myAnimator = GetComponent<Animator>();
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
     new public void OnTriggerEnter2D(Collider2D other)
     {

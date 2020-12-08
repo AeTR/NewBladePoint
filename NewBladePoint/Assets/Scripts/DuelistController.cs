@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class DuelistController : MonoBehaviour
 {
+    public AudioClip stabSound, kickSound, breathSound, blockSound, deathSound;
     public SpriteRenderer mySpriteRenderer;
     public Animator myAnimator;
     public Animator fireAnim;
-  
     public Animator leftAnim, rightAnim; //if necessary
     public GameManager myGM;
-    public bool left;
+    public bool left, mobile;
 
     public enum DuelistState
     {
@@ -24,7 +24,8 @@ public class DuelistController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        left = false;
+        myGM = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        mobile = true;
     }
 
     //currently, all of these simply play their animations
@@ -52,12 +53,23 @@ public class DuelistController : MonoBehaviour
         myAnimator.SetTrigger("Kick");
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void Die()
     {
-        if (other.tag.Contains("enemy") && !other.GetComponent<Enemy>().stunned)
-        {
-            //play death animation
-            myGM.RestartCurrentLevel();
-        }
+        myAnimator.SetTrigger("Dead");
+    }
+
+    public void Lose()
+    {
+        myGM.RestartCurrentLevel();
+    }
+
+    public void SetMobileToTrue()
+    {
+        mobile = true;
+    }
+
+    public void SetMobileToFalse()
+    {
+        mobile = false;
     }
 }

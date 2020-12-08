@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+	public AudioSource mySource;
 	public string[] sceneNameArray;
 	public int currentScene;
     // Start is called before the first frame update
@@ -29,4 +30,5 @@ public class GameManager : MonoBehaviour
 	    currentScene += 1;
 	    SceneManager.LoadScene(sceneNameArray[currentScene]);
     }
+    
 }

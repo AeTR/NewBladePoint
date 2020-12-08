@@ -10,6 +10,7 @@ public class Spring : Enemy
     // Start is called before the first frame update
     void Start()
     {
+        myGM = GameObject.Find("Game Manager").GetComponent<GameManager>();
         movingUp = false;
         myAnimator = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
